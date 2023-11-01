@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(42, 40, 40);
+    display: flex;
+    justify-content:
+    space-between;
+    align-items: center;
+    padding: 0 8%;
+}
+
+header .logo {
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    transition: .4s;
+}
+
+header .logo:hover {
+    transform: scale(1.2);
+    color:  rgb(237, 138, 138);
+}
+
+header nav ul li {
+    position: relative;
+    float: left;
+    transition: .2s;
+}
+
+header nav ul li a {
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+    display: block;
+    transition: .2s;
+}
+
+header nav ul li a:hover {
+    background-color: rgb(237, 138, 138);
+    color: rgb(152, 10, 10);
+}
+
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    color: white;
+    background-color: rgb(42, 40, 40);
+    display: none;
+}
+
+nav ul li ul li {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, .10);
+}
+
+nav ul li ul li:hover {
+    width: 100%;
+    border: 1px solid rgb(152, 10, 10);
+}
+
+nav ul li:hover > ul {
+    display: initial;
+}
+
+
+.log {
+    text-align: center;
+    padding-top: 200px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#loginout {
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+    font-size: 32px;
+}
+
+#btn {
+    padding-top: 20px;
+    text-align: center;
+}
+
+#text_login {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: rgb(152, 10, 10);
+}
+
+.btn1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: rgb(152, 10, 10);
+}
+
+.btn1:hover {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: rgb(24, 92, 219);
+}
+
+.button {
+    background-color: rgb(152, 10, 10);
+    border: 1px solid rgb(213, 136, 136);
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 40px;
+    text-align: center;
+    transition: .2s;
+}
+
+.button:hover {
+    color: rgb(152, 10, 10);
+    border: 1px solid rgb(152, 10, 10);
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+
+#signup {
+    color: rgb(213, 136, 136);
+}
+
+#signup:hover {
+    color: rgb(152, 10, 10);
+}
+
+.reggg {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.account1 {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+#icon {
+    height: 230px;
+    width: 230px;
+}
+
+.container {
+    margin: 80px 5% 0 5%;
+    column-count: 4;
+    column-gap: 10px;
+    width: 90%;
+}
+
+.postimg {
+    transition: 0.3s;
+    border-radius: 10px;
+    width: 98%;
+    margin: 5px 0 5px 0;
+    float: left;
+}
+
+.postimg:hover{
+    overflow: hidden;
+    transform: scale(1.03);
+    opacity: 70%;
+}
+
+
+.base {
+    text-align: center;
+    padding-top: 220px
+}
+
+.base1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(152, 10, 10);
+    font-size: 50px;
+    text-align: center;
+}
+
+.base12 {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(152, 10, 10);
+    font-size: 50px;
+    text-align: center;
+}
+
+.base13 {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(152, 10, 10);
+    font-size: 50px;
+    text-align: center;
+}
+
+.base2 {
+    font-size: 25px;
+    font-weight: 300;
+    padding-top: 30px;
+}
+
+.base21 {
+    font-size: 25px;
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+
+.desc {
+    color: rgb(0, 0, 0);
+}
+
+#loginout1 {
+    text-align: center;
+    padding: 10px;
+    padding-top: 170px;
+    font-size: 32px;
+}
+
+.post_detail {
+    margin: 100px 5% 100px 5%;
+    text-align: center;
+}
+
+
+.postimg1 {
+    border-radius: 20px;
+    transition: 0.3s;
+    height: 400px;
+    width: auto;
+}
+
+.postimg1:hover{
+    transform: scale(1.03);
+    opacity: 90%;
+}
+
+
+
+.post_detail h4 {
+    padding: 8px;
+}
+
+
+
+.post_detail h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    padding-bottom: 30px;
+}
+
+.post_detail p {
+    color: rgb(152, 10, 10);
+    margin-top: 20px;
+}

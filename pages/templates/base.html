@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+    {% block links %}
+    {% endblock links %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>
+        {% block title %}
+            Bloodlean
+        {% endblock title %}
+    </title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a href="{% url 'home' %}" class="logo">BLOODLEAN</a>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'register' %}">Sign up</a></li>
+                    <li><a href="{% url 'create' %}">Create</a></li>
+                    <li><a href="{% url 'profile' %}">My Profile</a></li>
+                </ul>
+            </nav>
+        </header>
+        {% block content %}
+        <div class="base">
+            <h1 class="base1">
+                Просмотрите
+            </h1>
+            <h1 class="base12">
+                сделайте
+            </h1>
+            <h1 class="base13">
+                опробуйте
+            </h1>
+            <div class="desc">
+                <p class="base2">
+                    Здесь вы можете находить для себя
+                </p>
+                <p class="base21">
+                    новые увлечения и идеи со всего мира.
+                </p>
+            </div>
+            <a href="{% url 'post' %}">
+                <p id="btn">
+                    <input  class="button" type="submit" value="Посты">
+                </p>
+            </a>
+        </div>
+        {% endblock %}
+    </div>
+</body>
+</html>

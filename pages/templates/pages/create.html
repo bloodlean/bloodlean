@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Create
+{% endblock %}
+
+{% block content %}
+    <div class="log">
+        <h1 id="text_login">Create</h1>
+            <div id="loginout">
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                <p id="btn">
+                    <input class="button" type="submit" value="Add">
+                </p>
+                </form>
+            </div>
+    </div>
+{% endblock %}

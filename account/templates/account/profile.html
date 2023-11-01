@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="log">
+        <h1 id="text_login">Your page</h1>
+    </div>
+    {% if request.user.is_authenticated %}
+        <div class="log">
+            <h1></h1>
+            <img id="icon" src="{% if user.image %}{{ user.image.url }}
+                            {% else %}{% static 'images/no_image.png' %}{% endif %}">
+        </div>
+    {% else %}
+        <div>
+            <h1 id="text_login"><a class="btn1" href="{% url 'login' %}">Login</a> at first</h1>
+        </div>
+    {% endif %}
+{% endblock %}

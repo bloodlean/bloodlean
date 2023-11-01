@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    Create an account
+{% endblock %}
+
+{% block content %}
+    <div class="log">
+        <h1 id="text_login">Sign up</h1>
+            <div id="loginout">
+                <form action="" method="post">
+                    {{ user_form.as_p }}
+                    {% csrf_token %}
+                    <input type="hidden" name="next" value="{{ next }}">
+                    <div class="account1">
+                        Already have an account? <a id="signup" href="{% url 'login' %}">log-in</a>
+                    </div>
+                    <p id="btn">
+                        <input class="button" type="submit" value="Log in">
+                    </p>
+                </form>
+            </div>
+    </div>
+{% endblock %}

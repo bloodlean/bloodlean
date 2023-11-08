@@ -8,6 +8,9 @@
         <h6>{{ post.created }}</h6>
         <h4>{{ post.description|truncatechars:50 }}</h4>
         <p>by {{ post.author }}</p>
+        <p id="btn">
+            <a class="button" href="{{ product.get_absolute_url }}delete/">Delete</a>
+        </p>
     </div>
 
 {% endblock %}

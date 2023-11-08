@@ -7,10 +7,13 @@
     text-decoration: none;
 }
 
-
+body {
+    background-color: #ffffff;
+    background-image: radial-gradient(#ca2d2d 0.5px, #ffffff 0.5px);
+    background-size: 10px 10px;
+}
 
 header {
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -79,7 +82,7 @@ nav ul li:hover > ul {
 
 .log {
     text-align: center;
-    padding-top: 200px;
+    padding-top: 80px;
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -167,7 +170,7 @@ nav ul li:hover > ul {
 }
 
 .postimg {
-    transition: 0.3s;
+    transition: 0.5s;
     border-radius: 10px;
     width: 98%;
     margin: 5px 0 5px 0;
@@ -175,15 +178,18 @@ nav ul li:hover > ul {
 }
 
 .postimg:hover{
-    overflow: hidden;
+    transition: 0.5s;
     transform: scale(1.03);
-    opacity: 70%;
+    opacity: 100%;
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.6);
 }
 
 
 .base {
     text-align: center;
-    padding-top: 220px
+    margin-top: 220px;
 }
 
 .base1 {
@@ -267,4 +273,8 @@ nav ul li:hover > ul {
 .post_detail p {
     color: rgb(152, 10, 10);
     margin-top: 20px;
+}
+
+.lgn {
+    
 }

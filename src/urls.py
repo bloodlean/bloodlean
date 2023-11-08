@@ -8,6 +8,7 @@ from account.views import profile
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('account/', include('account.urls')),
+    path('api/', include('api.urls')),
     path('account/profile/', profile, name='profile'),
     path('', include('pages.urls')),
 ]

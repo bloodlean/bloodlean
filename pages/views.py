@@ -40,3 +40,8 @@ def create(request):
         'form': form
     }
     return render(request, 'pages/create.html', context)
+
+def post_delete(request, pk):
+    post = Post.objects.get(id=pk)
+    post.delete()
+    return redirect(to='post')

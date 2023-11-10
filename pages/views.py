@@ -25,7 +25,7 @@ def post_detail(request, pk):
         'post': post
     }
     return render(request, 'pages/post_detail.html', context)
-
+    
 def create(request):
     if request.method == 'POST':
         form = PostForm(request.POST, request.FILES)
@@ -34,8 +34,6 @@ def create(request):
         return redirect(to='post')
     else: 
         form = PostForm()
-
-    #print(ProductForm(request.POST).is_valid())
     context = {
         'form': form
     }

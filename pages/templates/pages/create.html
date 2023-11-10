@@ -4,17 +4,29 @@
     Create
 {% endblock %}
 
+
 {% block content %}
-    <div class="log">
-        <h1 id="text_login">Create</h1>
-            <div id="loginout">
-                <form method="post" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    {{ form.as_p }}
+    {% if user.is_authenticated %}
+        <div class="log">
+            <h1 id="text_login">Create</h1>
+                <div id="loginout">
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                    <p id="btn">
+                        <input class="button" type="submit" value="Add">
+                    </p>
+                    </form>
+                </div>
+        </div>
+    {% else %}
+        <div class="log2">
+            <p>To create a post, you first need to login</p>
+            <a href="{% url 'login' %}">
                 <p id="btn">
-                    <input class="button" type="submit" value="Add">
+                    <input class="button" type="submit" value="Log in">
                 </p>
-                </form>
-            </div>
-    </div>
+            </a>
+        </div>
+    {% endif %}
 {% endblock %}

@@ -275,6 +275,10 @@ nav ul li:hover > ul {
     margin-top: 20px;
 }
 
-.lgn {
-    
+.log2 {
+    text-align: center;
+    padding-top: 280px;
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(152, 10, 10);
 }

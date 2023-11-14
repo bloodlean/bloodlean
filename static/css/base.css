@@ -88,10 +88,18 @@ nav ul li:hover > ul {
 }
 
 #loginout {
-    text-align: center;
+    text-align: left;
     padding: 10px;
+    padding-left: 30px;
     padding-top: 20px;
-    font-size: 32px;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: white;
+    border: 3px solid rgb(152, 10, 10);
+    border-radius: 15px;
+    box-shadow: rgba(152, 10, 10, 0.24) 0px 3px 8px;
+    max-width: 500px;
+    margin-left: 513px;
 }
 
 #btn {
@@ -136,6 +144,7 @@ nav ul li:hover > ul {
     border: 1px solid rgb(152, 10, 10);
     background-color: rgb(255, 255, 255);
     transform: scale(1.1);
+    box-shadow: rgba(152, 10, 10, 0.24) 0px 3px 8px;
 }
 
 #signup {

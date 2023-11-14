@@ -3,7 +3,7 @@
 
 {% block content %}
     <div class="log">
-        <h1 id="text_login">Your page</h1>
+        <h1 id="text_login">Ваш аккаунт</h1>
     </div>
     {% if request.user.is_authenticated %}
         <div class="log">
@@ -13,7 +13,7 @@
         </div>
     {% else %}
         <div>
-            <h1 id="text_login"><a class="btn1" href="{% url 'login' %}">Login</a> at first</h1>
+            <h1 id="text_login"><a class="btn1" Для начала href="{% url 'login' %}">авторизуйтесь</a></h1>
         </div>
     {% endif %}
 {% endblock %}

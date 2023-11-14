@@ -7,17 +7,17 @@
 
 {% block content %}
     <div class="log">
-        <h1 id="text_login">Sign up</h1>
+        <h1 id="text_login">Регистрация</h1>
             <div id="loginout">
                 <form action="" method="post">
                     {{ user_form.as_p }}
                     {% csrf_token %}
                     <input type="hidden" name="next" value="{{ next }}">
                     <div class="account1">
-                        Already have an account? <a id="signup" href="{% url 'login' %}">log-in</a>
+                        У вас уже есть аккаунт? <a id="signup" href="{% url 'login' %}">авторизоваться</a>
                     </div>
                     <p id="btn">
-                        <input class="button" type="submit" value="Log in">
+                        <input class="button" type="submit" value="Войти">
                     </p>
                 </form>
             </div>

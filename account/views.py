@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, authenticate, logout
 from .forms import LoginForm, UserRegistrationForm
 from django.http import HttpResponse
 
@@ -12,11 +12,11 @@ def user_login(request):
             if user is not None:
                 if user.is_active:
                     login(request, user)
-                    return HttpResponse('Successful authentication')
+                    return HttpResponse('Вы успешно авторизовались')
                 else:
-                    return HttpResponse('Account does not exist')
+                    return HttpResponse('Аккаунт не существует')
             else:
-                HttpResponse('Wrong login')
+                HttpResponse('Неправильный логин')
     else:
         form = LoginForm()
     context = {
@@ -51,4 +51,3 @@ def register(request):
 
 def profile(request):
     return render(request, 'account/profile.html')
-

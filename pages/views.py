@@ -21,8 +21,10 @@ def post(request):
 
 def post_detail(request, pk):
     post = Post.objects.get(id=pk)
+    user = request.user
     context = {
-        'post': post
+        'post': post,
+        'user': user
     }
     return render(request, 'pages/post_detail.html', context)
     

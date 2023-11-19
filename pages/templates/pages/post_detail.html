@@ -6,9 +6,9 @@
         <a href="{{ post.image.url }}"><img class="postimg1" src="{{ post.image.url }}" alt="post"/></a>
         <h3>{{ post.title }}</h3>
         <h6>{{ post.created }}</h6>
-        <h4>{{ post.description|truncatechars:50 }}</h4>
+        <h4>{{ post.description}}</h4>
         <p>by {{ post.author }}</p>
-        {% if user.is_authenticated %}
+        {% if post.user == user or user.is_staff %}
             <p id="btn">
                 <a class="button" href="{{ product.get_absolute_url }}delete/">Delete</a>
             </p>

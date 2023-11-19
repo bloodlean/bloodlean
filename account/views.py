@@ -24,6 +24,12 @@ def user_login(request):
     }
     return render(request, 'account/login.html', context)
 
+
+def logout(request):
+    logout(request)
+    return render(request, 'logged_out.html')
+
+
 def register(request):
     if request.method == 'POST':
         user_form = UserRegistrationForm(request.POST)
